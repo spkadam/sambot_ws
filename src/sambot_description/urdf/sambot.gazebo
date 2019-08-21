@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot>
 
-  <!--gazebo reference="left_wheel_hinge">
+  <gazebo reference="left_wheel_hinge">
       <mu1 value="10000.0" />
       <mu2 value="10000.0" />
       <kp value="100000.0" />
@@ -16,7 +16,7 @@
       <kd value="0.00001" />
       <maxVel value="1.0" />
       <minDepth value="0.0001" />
-  </gazebo-->    
+  </gazebo>    
 
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
@@ -49,7 +49,7 @@
   </gazebo>
 
 
-  <gazebo reference="camera">
+  <!--gazebo reference="camera">
     <material>Gazebo/Green</material>
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
@@ -80,10 +80,10 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo-->
 
-  <!-- hokuyo -->
-  <gazebo reference="hokuyo">
+  
+  <!--gazebo reference="hokuyo">
     <sensor type="gpu_ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>false</visualize>
@@ -104,10 +104,10 @@
         </range>
         <noise>
           <type>gaussian</type>
-          <!--Noise parameters based on published spec for Hokuyo laser
+          <Noise parameters based on published spec for Hokuyo laser
                achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
                stddev of 0.01m will put 99.7% of samples within 0.03m of the true
-               reading.-->
+               reading.>
           <mean>0.0</mean>
           <stddev>0.01</stddev>
         </noise>
@@ -117,7 +117,7 @@
         <frameName>hokuyo</frameName>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo-->
 
 
 </robot>
