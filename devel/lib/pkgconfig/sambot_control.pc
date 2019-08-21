@@ -1,0 +1,8 @@
+prefix=/home/sam/sambot_ws/devel
+
+Name: sambot_control
+Description: Description of sambot_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sam/sambot_ws/devel/lib 
+Requires: 
