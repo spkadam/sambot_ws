@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/sam/sambot_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/sam/sambot_ws/devel/lib:$LD_LIBRARY_PATH"
 export PWD="/home/sam/sambot_ws/build"
-export ROS_PACKAGE_PATH="/home/sam/sambot_ws/src:$ROS_PACKAGE_PATH"

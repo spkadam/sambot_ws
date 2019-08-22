@@ -1,2 +1,2 @@
-sambot_control:sambot_description:sambot_gazebo
+sambot_control:sambot_description:sambot_gazebo:sambot_navigation
 -DCATKIN_DEVEL_PREFIX=/home/sam/sambot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sam/sambot_ws/install -G Unix Makefiles

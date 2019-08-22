@@ -1,0 +1,8 @@
+prefix=/home/sam/sambot_ws/install
+
+Name: sambot_navigation
+Description: Description of sambot_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sam/sambot_ws/install/lib 
+Requires: 

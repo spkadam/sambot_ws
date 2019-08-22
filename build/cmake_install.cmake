@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/sam/sambot_ws/build/sambot_control/cmake_install.cmake")
   include("/home/sam/sambot_ws/build/sambot_description/cmake_install.cmake")
   include("/home/sam/sambot_ws/build/sambot_gazebo/cmake_install.cmake")
+  include("/home/sam/sambot_ws/build/sambot_navigation/cmake_install.cmake")
 
 endif()
 
