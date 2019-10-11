@@ -1,6 +1,7 @@
 <?xml version='1.0'?>
 
 <robot name="myrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+	<pose>3.0 3.0 0.1 0 0 0</pose>
 
   <xacro:property name="cameraSize" value="0.05"/>
   <xacro:property name="cameraMass" value="0.1"/>
@@ -15,24 +16,25 @@
 
     <inertial>
       <mass value="15.0"/>
-      <origin xyz="0.0 0 0.1" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0.1" rpy=" 0 0 0"/>
       <inertia
           ixx="0.1" ixy="0" ixz="0"
           iyy="0.1" iyz="0"
-          izz="0.1"
-      />
+          izz="0.1"/>
     </inertial>
 
     <collision name='collision'>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size="0.4 0.2 .1"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0.1" rpy=" 1.5708 3.14159 0"/>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <mesh filename="package://sambot_description/meshes/body.STL"/>
+        <!--scale> 0.001 0.001 0.001</scale-->
+        <!--box size="0.4 0.2 .1"/-->
       </geometry>
     </visual>
 
